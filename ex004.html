@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Whats your name?')
+        document.write(`Hello, <strong>${nome}</strong>! your name has ${nome.length} letters.<br>`)
+        document.write(`Your name in UpperCase is ${nome.toUpperCase()}<br>`)
+        document.write(`Your name in LowerCase is ${nome.toLowerCase()}<br>`)
+        var salary = Number(window.prompt('Whats your salary?'))
+        document.write(`You salary is ${salary.toFixed(2).replace('.',',')}<br>`)
+        document.write(`Salary: ${salary.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>
